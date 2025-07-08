@@ -5,6 +5,8 @@ use crate::{
 mod ex_variable;
 mod model;
 mod variable;
+mod vector_variable;
+
 fn main() {
     println!("Hello, world!");
     varialbe_print();

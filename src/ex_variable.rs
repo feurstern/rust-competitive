@@ -17,6 +17,9 @@ pub fn shadowing_variable_ex() {
         let x = x + y;
         x
     };
+    let rust_icon = "🦀";
+
+    println!("rust_icon : {}", rust_icon);
     println!("variable x {}", number)
 }
 
@@ -31,5 +34,21 @@ pub fn ex_variable_print() {
 
     shadowing_variable_ex();
 
+    let division_result = match variable_division(4, 10) {
+        Ok(r) => r,
+        Err(e) => {
+            println!("error :{}", e);
+            return;
+        }
+    };
+
+    println!("division result {}", division_result);
     println!("result division:{}", result_division);
+}
+
+fn variable_division(x: i32, y: i32) -> Result<f32, &'static str> {
+    match y {
+        0 => Err("Cannot be divided by zero!"),
+        _ => Ok(x as f32 / y as f32),
+    }
 }
