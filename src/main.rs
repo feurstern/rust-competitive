@@ -1,7 +1,9 @@
 use crate::{
     ex_variable::ex_variable_print,
     variable::{shadowing_variable_print, variable_operation, varialbe_print},
+    vector_variable::vector_print,
 };
+
 mod ex_variable;
 mod model;
 mod variable;
@@ -15,4 +17,6 @@ fn main() {
     variable_operation();
 
     ex_variable_print();
+
+    vector_print();
 }
