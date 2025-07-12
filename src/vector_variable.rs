@@ -40,28 +40,56 @@ pub fn vector_print() {
     };
     println!("division result {} :", division_result);
 
-    let data = vec![Employe {
-        name: "Hatsune Miku",
-        age: 17,
-        address: Address {
-            country: "Japan",
-            province: "Ohime",
-            city: "Tokyo",
-            district: "Tkyo",
-            sub_district: "Tokyo",
-            address_detal: "Tokyo minato",
+    let data = vec![
+        Employe {
+            name: "Hatsune Miku",
+            age: 17,
+            address: Address {
+                country: "Japan",
+                province: "Ohime",
+                city: "Tokyo",
+                district: "Tkyo",
+                sub_district: "Tokyo",
+                address_detal: "Tokyo minato",
+            },
+            education_background: EducationBackground {
+                education_name: "Universitiy Tshin Hua",
+                education_level: "Master degree",
+                graduated_at: "23 November 1998",
+                score: 3.98,
+            },
         },
-        education_background: EducationBackground {
-            education_name: "Universitiy Tshin Hua",
-            education_level: "Master degree",
-            graduated_at: "23 November 1998",
-            score: 3.98,
+        Employe {
+            name: "Haris Wijaya",
+            age: 17,
+            address: Address {
+                country: "Japan",
+                province: "Ohime",
+                city: "Tokyo",
+                district: "Tkyo",
+                sub_district: "Tokyo",
+                address_detal: "Tokyo minato",
+            },
+            education_background: EducationBackground {
+                education_name: "Universitiy Tshin Hua",
+                education_level: "Master degree",
+                graduated_at: "23 November 1998",
+                score: 3.98,
+            },
         },
-    }];
+    ];
 
     for x in data {
         println!("Name: {}", x.name);
         println!("Age: {}", x.age);
         println!("education :{}", x.education_background.education_name);
     }
+
+    tuple_print();
+}
+
+pub fn tuple_print() {
+    let random_tuple = ("glory for the nazis", 10, vec![10, 12, 32], true);
+
+    println!("first item of the tuple {:?}", random_tuple.0);
 }
