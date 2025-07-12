@@ -1,6 +1,5 @@
 fn odd_even_number(x: i32) -> String {
     let result = x % 2;
-
     match result {
         0 => String::from("The number is even"),
         _ => String::from("The number is oddd"),
