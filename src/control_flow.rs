@@ -1,3 +1,13 @@
+struct Languages {
+    name: &'static str,
+    level: &'static str,
+}
+struct Skills {
+    name: &'static str,
+    age: u32,
+    languages: Languages,
+}
+
 fn odd_even_number(x: i32) -> String {
     let result = x % 2;
     match result {
@@ -35,4 +45,14 @@ pub fn control_flow_print() {
     let degrees = degree_converter(32, "celcius");
 
     println!("degrees : {}", degrees);
+
+    let user = Skills {
+        name: "Hatsune mIKU",
+        age: 17,
+        languages: Languages {
+            name: "Japanese",
+            level: "Advance",
+        },
+    };
+    println!("user struct {:?}", user.languages.name);
 }
