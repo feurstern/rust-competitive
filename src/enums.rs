@@ -1,5 +1,3 @@
-
-
 enum ExaminationResult {
     Passed(String),
     NotPassed(String),
