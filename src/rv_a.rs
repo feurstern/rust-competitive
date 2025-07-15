@@ -84,7 +84,6 @@ fn product_print() {
 fn rupiah_format(price: f32) -> String {
     let mut format_price: String = "Rp. ".to_owned();
     format_price.push_str(&price.to_string());
-
     format_price
 }
 

@@ -8,7 +8,6 @@ struct Skills {
     languages: Languages,
 }
 
-
 fn odd_even_number(x: i32) -> String {
     let result = x % 2;
     match result {
