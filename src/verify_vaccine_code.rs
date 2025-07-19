@@ -38,6 +38,7 @@ pub fn insert_vaccine_id() {
             return;
         }
     };
+
     println!("result division : {}", result);
     println!("verfying result:{}", verifying_result);
 }
