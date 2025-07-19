@@ -7,6 +7,7 @@ use crate::{
     looping::looping_print,
     mut_borrow::mut_borrow_print,
     rv_a::rev_a_print,
+    square_digit::square,
     variable::{shadowing_variable_print, variable_operation, varialbe_print},
     vector_variable::vector_print,
     verify_vaccine_code::insert_vaccine_id,
@@ -21,6 +22,7 @@ mod looping;
 mod model;
 mod mut_borrow;
 mod rv_a;
+mod square_digit;
 mod variable;
 mod vector_variable;
 mod verify_vaccine_code;
@@ -47,5 +49,7 @@ fn main() {
     mut_borrow_print();
     // insert_vaccine_id();
 
-    guess_number_print();
+    // guess_number_print();
+
+    println!("square result:{}", square(9191));
 }
