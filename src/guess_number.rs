@@ -10,6 +10,7 @@ fn guess(n: i32) -> bool {
 
 pub fn guess_number_print() {
     let stdin = io::stdin();
+
     let mut line = stdin.lock().lines();
 
     let n = line.next().unwrap().unwrap().parse::<i32>().unwrap();

@@ -42,23 +42,16 @@ fn main() {
     // ex_variable_print();
 
     // vector_print();
-
     // looping_print();
-
     // control_flow_print();
-
     // error_handling_print();
     // enums_print();
 
     // rev_a_print();
-
     mut_borrow_print();
     // insert_vaccine_id();
-
     // guess_number_print();
-
     println!("square result:{}", square(9191));
-
     find_intersection_display();
     factorial_display();
 }

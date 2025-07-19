@@ -8,7 +8,6 @@ pub fn factorial_display() {
     let n = lines.next().unwrap().unwrap().parse::<i32>().unwrap();
 
     let result = factorial(n);
-
     println!("factorial result :{}", result);
 }
 
