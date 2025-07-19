@@ -23,6 +23,9 @@ pub fn mut_borrow_print() {
     change_string(&mut message, String::from("I will become the master!"));
 
     println!("message after change : {}", message);
+
+    let message_length = calculate_length_string(&message);
+    println!("the message length: {}", message_length);
 }
 
 fn calculate_length_string(s: &String) -> usize {
