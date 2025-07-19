@@ -1,11 +1,25 @@
 use crate::{
-    control_flow::control_flow_print, enums::enums_print, error_handling::error_handling_print, ex_variable::ex_variable_print, find_intersection::find_intersection_display, guess_number::guess_number_print, looping::looping_print, mut_borrow::mut_borrow_print, rv_a::rev_a_print, square_digit::square, variable::{shadowing_variable_print, variable_operation, varialbe_print}, vector_variable::vector_print, verify_vaccine_code::insert_vaccine_id
+    control_flow::control_flow_print,
+    enums::enums_print,
+    error_handling::error_handling_print,
+    ex_variable::ex_variable_print,
+    factorial::factorial_display,
+    find_intersection::find_intersection_display,
+    guess_number::guess_number_print,
+    looping::looping_print,
+    mut_borrow::mut_borrow_print,
+    rv_a::rev_a_print,
+    square_digit::square,
+    variable::{shadowing_variable_print, variable_operation, varialbe_print},
+    vector_variable::vector_print,
+    verify_vaccine_code::insert_vaccine_id,
 };
 
 mod control_flow;
 mod enums;
 mod error_handling;
 mod ex_variable;
+mod factorial;
 mod find_intersection;
 mod guess_number;
 mod looping;
@@ -17,6 +31,7 @@ mod square_digit;
 mod variable;
 mod vector_variable;
 mod verify_vaccine_code;
+
 fn main() {
     // println!("Hello, world!");
     // varialbe_print();
@@ -45,4 +60,5 @@ fn main() {
     println!("square result:{}", square(9191));
 
     find_intersection_display();
+    factorial_display();
 }
