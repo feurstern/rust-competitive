@@ -12,7 +12,7 @@ use crate::{
     square_digit::square,
     variable::{shadowing_variable_print, variable_operation, varialbe_print},
     vector_variable::vector_print,
-    verify_vaccine_code::insert_vaccine_id,
+    verify_vaccine_code::insert_vaccine_id, who_like_it::who_likes_display,
 };
 
 mod control_flow;
@@ -20,6 +20,7 @@ mod enums;
 mod error_handling;
 mod ex_variable;
 mod factorial;
+mod who_like_it;
 mod find_intersection;
 mod guess_number;
 mod looping;
@@ -51,7 +52,8 @@ fn main() {
     mut_borrow_print();
     // insert_vaccine_id();
     // guess_number_print();
-    println!("square result:{}", square(9191));
-    find_intersection_display();
-    factorial_display();
+    // println!("square result:{}", square(9191));
+    // find_intersection_display();
+    // factorial_display();
+    who_likes_display();
 }

@@ -1,5 +1,5 @@
+use std::io::{self, BufRead};
 use std::vec;
-
 struct EducationBackground {
     education_name: &'static str,
     education_level: &'static str,
@@ -28,6 +28,12 @@ pub fn division(x: i32, y: i32) -> Result<f32, String> {
         0 => Err(String::from("Cannot be divided by0")),
         _ => Ok(x as f32 / y as f32),
     }
+}
+
+fn insert_vector() {
+    let mut v = String::new();
+    let stdin = io::stdin();
+    let mut lines = stdin.lock().lines();
 }
 
 pub fn vector_print() {
