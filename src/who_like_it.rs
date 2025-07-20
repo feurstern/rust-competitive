@@ -1,5 +1,3 @@
-use std::fmt::format;
-
 fn generate_likes(names: &[&str]) -> String {
     match names.len() {
         0 => String::from("no one like this"),
@@ -15,4 +13,14 @@ pub fn who_likes_display() {
     let result = generate_likes(&names);
 
     println!("likes:{}", result);
+}
+
+fn likes(names: &[&str]) -> String {
+    match names {
+        [] => format!("no one likes this"),
+        [a] => format!("{} likes this", a),
+        [a, b] => format!("{} and {} like this", a, b),
+        [a, b, c] => format!("{}, {} and {} like this", a, b, c),
+        [a, b, rest @ ..] => format!("{}, {} and {} others like this", a, b, rest.len()),
+    }
 }
