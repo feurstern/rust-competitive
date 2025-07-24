@@ -9,10 +9,10 @@ where
     let mut iter = sequence.into_iter();
 
     if let Some(mut prev) = iter.next() {
-        result.push(prev.clone());
+        // result.push(prev.clone());
 
         for curr in iter {
-            result.push(curr.clone());
+            // result.push(curr.clone());
             prev = curr;
         }
     }
