@@ -6,10 +6,20 @@ pub fn spin_word_display() {
 
     println!("w:");
     let words = lines.next().unwrap().unwrap().parse::<String>().unwrap();
-    println!("fn {:?}", spin_word_fn(words));
+    println!("fn {:?}", spin_word_fn(&words));
+
+    let len_string = match words_len(words.to_string()) {
+        Ok(n) => n,
+        Err(s) => {
+            println!("Error :{}", s);
+            return;
+        }
+    };
+
+    println!("len_string :{}", len_string);
 }
 
-fn spin_word_fn(words: String) -> String {
+fn spin_word_fn(words: &String) -> String {
     format!("w:{:?}", words.split(' ').collect::<Vec<&str>>())
 }
 
