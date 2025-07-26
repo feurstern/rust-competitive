@@ -16,7 +16,7 @@ pub fn spin_word_display() {
         }
     };
 
-    println!("len_string :{}", len_string);
+    println!("len_string :{}", len_string)
 }
 
 fn spin_word_fn(words: &String) -> String {
