@@ -11,11 +11,14 @@ pub fn borrower_ex_display() {
     println!("enter x :");
     let x = lines.next().unwrap().unwrap().parse::<u32>().unwrap();
     let z = x;
+
+    let w = double(x);
+
     println!("result digit{:?}", borrow_dg_vec(z));
-
     let v = vec![1, 3, 4, 5];
-
     println!("take {:?} :", take(v));
+
+    println!("double {}", w);
 }
 
 fn borrow_dg_vec(x: u32) -> Vec<u32> {
@@ -27,4 +30,8 @@ fn borrow_dg_vec(x: u32) -> Vec<u32> {
 
 fn take(v: Vec<i32>) -> Vec<i32> {
     v.into_iter().map(|c| c.pow(2)).collect()
+}
+
+fn double(num: u32) -> u32 {
+    num * 2
 }
