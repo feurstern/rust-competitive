@@ -1,24 +1,8 @@
 use crate::{
-    control_flow::control_flow_print,
-    enums::enums_print,
-    error_handling::error_handling_print,
-    ex_variable::ex_variable_print,
-    factorial::factorial_display,
-    find_intersection::find_intersection_display,
-    guess_number::guess_number_print,
-    is_this_triangle::is_this_triangle_display,
-    looping::looping_print,
-    mut_borrow::mut_borrow_print,
-    persistent_bugger::persistent_bugger_display,
-    rev_2::rev_2_display,
-    rv_a::rev_a_print,
-    square_digit::square,
-    variable::{shadowing_variable_print, variable_operation, varialbe_print},
-    vector_variable::vector_print,
-    verify_vaccine_code::insert_vaccine_id,
-    who_like_it::who_likes_display,
+    borrower_ex::borrower_ex_display, control_flow::control_flow_print, enums::enums_print, error_handling::error_handling_print, ex_variable::ex_variable_print, factorial::factorial_display, find_intersection::find_intersection_display, guess_number::guess_number_print, is_this_triangle::is_this_triangle_display, looping::looping_print, mut_borrow::mut_borrow_print, persistent_bugger::persistent_bugger_display, rev_2::rev_2_display, rv_a::rev_a_print, square_digit::square, variable::{shadowing_variable_print, variable_operation, varialbe_print}, vector_variable::vector_print, verify_vaccine_code::insert_vaccine_id, who_like_it::who_likes_display
 };
 
+mod borrower_ex;
 mod control_flow;
 mod enums;
 mod error_handling;
@@ -54,9 +38,10 @@ fn main() {
     // control_flow_print();
     // error_handling_print();
     // enums_print();
+    borrower_ex_display();
 
     // rev_a_print();
-    mut_borrow_print();
+    // mut_borrow_print();
     // insert_vaccine_id();
     // guess_number_print();
     // println!("square result:{}", square(9191));
@@ -65,5 +50,5 @@ fn main() {
     // who_likes_display();
     // persistent_bugger_display();
     // is_this_triangle_display();
-    rev_2_display();
+    // rev_2_display();
 }
