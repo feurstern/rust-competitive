@@ -4,6 +4,7 @@ pub fn create_phone_number_display() {
     let stdin = io::stdin();
     let mut lines = stdin.lock().lines();
     let x = lines.next().unwrap().unwrap().parse::<String>().unwrap();
+
     let arr = x
         .to_string()
         .chars()
