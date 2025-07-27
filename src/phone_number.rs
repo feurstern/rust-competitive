@@ -5,13 +5,13 @@ pub fn create_phone_number_display() {
     let mut lines = stdin.lock().lines();
     let x = lines.next().unwrap().unwrap().parse::<String>().unwrap();
     let arr = x
+        .to_string()
         .chars()
-        .map(|f| f.to_digit(10).unwrap())
+        .filter_map(|c| c.to_digit(10))
+        .map(|d| d as u8)
         .collect::<Vec<u8>>();
-    println!(
-        "result phone number: {}",
-        create_phone_number(&[1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
-    );
+
+    println!("result phone number: {}", create_phone_number(&arr));
 }
 
 fn create_phone_number(numbers: &[u8]) -> String {
