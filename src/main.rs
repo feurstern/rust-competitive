@@ -16,6 +16,7 @@ use crate::{
     rv_a::rev_a_print,
     spin_word::spin_word_display,
     square_digit::square,
+    two_sum::two_sum_diplay,
     variable::{shadowing_variable_print, variable_operation, varialbe_print},
     vector_variable::vector_print,
     verify_vaccine_code::insert_vaccine_id,
@@ -76,4 +77,5 @@ fn main() {
     // rev_2_display();
     // spin_word_display();
     // create_phone_number_display();
+    two_sum_diplay();
 }
