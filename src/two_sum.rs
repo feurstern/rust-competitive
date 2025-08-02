@@ -1,5 +1,5 @@
 use ::std::io::{self, BufRead};
-use std::{collections::HashMap, f32::consts::E};
+use std::collections::HashMap;
 
 pub fn two_sum_diplay() -> io::Result<()> {
     let stdin = io::stdin();
