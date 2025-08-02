@@ -4,6 +4,7 @@ use std::collections::HashMap;
 pub fn two_sum_diplay() -> io::Result<()> {
     let stdin = io::stdin();
     let mut lines = stdin.lock().lines();
+
     println!("Enter target (ex: 2, 100, 50)");
 
     let target: i32 = match lines.next() {

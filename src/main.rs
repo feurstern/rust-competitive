@@ -31,6 +31,7 @@ mod ex_variable;
 mod factorial;
 mod find_intersection;
 mod guess_number;
+mod input_rev;
 mod is_this_triangle;
 mod looping;
 mod model;
@@ -77,5 +78,5 @@ fn main() {
     // rev_2_display();
     // spin_word_display();
     // create_phone_number_display();
-    two_sum_diplay();
+    // two_sum_diplay();
 }
