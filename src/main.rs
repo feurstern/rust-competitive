@@ -1,5 +1,26 @@
 use crate::{
-    borrower_ex::borrower_ex_display, control_flow::control_flow_print, enums::enums_print, error_handling::error_handling_print, ex_variable::ex_variable_print, factorial::factorial_display, find_intersection::find_intersection_display, guess_number::guess_number_print, is_this_triangle::is_this_triangle_display, looping::looping_print, mut_borrow::mut_borrow_print, persistent_bugger::persistent_bugger_display, phone_number::create_phone_number_display, rev_2::rev_2_display, rv_a::rev_a_print, spin_word::spin_word_display, square_digit::square, variable::{shadowing_variable_print, variable_operation, varialbe_print}, vector_variable::vector_print, verify_vaccine_code::insert_vaccine_id, who_like_it::who_likes_display
+    borrower_ex::borrower_ex_display,
+    control_flow::control_flow_print,
+    enums::enums_print,
+    error_handling::error_handling_print,
+    ex_variable::ex_variable_print,
+    factorial::factorial_display,
+    find_intersection::find_intersection_display,
+    guess_number::guess_number_print,
+    is_this_triangle::is_this_triangle_display,
+    looping::looping_print,
+    mut_borrow::mut_borrow_print,
+    persistent_bugger::persistent_bugger_display,
+    phone_number::create_phone_number_display,
+    rev_2::rev_2_display,
+    rv_a::rev_a_print,
+    spin_word::spin_word_display,
+    square_digit::square,
+    two_sum::two_sum_diplay,
+    variable::{shadowing_variable_print, variable_operation, varialbe_print},
+    vector_variable::vector_print,
+    verify_vaccine_code::insert_vaccine_id,
+    who_like_it::who_likes_display,
 };
 
 mod borrower_ex;
@@ -21,6 +42,7 @@ mod rev_2;
 mod rv_a;
 mod spin_word;
 mod square_digit;
+mod two_sum;
 mod unique_in_order;
 mod variable;
 mod vector_variable;
@@ -44,7 +66,7 @@ fn main() {
 
     // rev_a_print();
     // mut_borrow_print();
-    // insert_vaccine_id();
+    // insert_vaccine_id();t
     // guess_number_print();
     // println!("square result:{}", square(9191));
     // find_intersection_display();
@@ -54,5 +76,6 @@ fn main() {
     // is_this_triangle_display();
     // rev_2_display();
     // spin_word_display();
-    create_phone_number_display();
+    // create_phone_number_display();
+    two_sum_diplay();
 }
