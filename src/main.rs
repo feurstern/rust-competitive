@@ -1,10 +1,34 @@
 use crate::{
-    borrower_ex::borrower_ex_display, break_camel_case::break_camel_case_fn, control_flow::control_flow_print, enums::enums_print, error_handling::error_handling_print, ex_variable::ex_variable_print, factorial::factorial_display, find_intersection::find_intersection_display, guess_number::guess_number_print, is_this_triangle::is_this_triangle_display, looping::looping_print, mut_borrow::mut_borrow_print, persistent_bugger::persistent_bugger_display, phone_number::create_phone_number_display, rev_2::rev_2_display, rv_a::rev_a_print, spin_word::spin_word_display, square_digit::square, two_sum::two_sum_diplay, variable::{shadowing_variable_print, variable_operation, varialbe_print}, vector_variable::vector_print, verify_vaccine_code::insert_vaccine_id, who_like_it::who_likes_display
+    borrower_ex::borrower_ex_display,
+    break_camel_case::break_camel_case_fn,
+    control_flow::control_flow_print,
+    duplicat_encoder::duplicate_encoder_fn,
+    enums::enums_print,
+    error_handling::error_handling_print,
+    ex_variable::ex_variable_print,
+    factorial::factorial_display,
+    find_intersection::find_intersection_display,
+    guess_number::guess_number_print,
+    is_this_triangle::is_this_triangle_display,
+    looping::looping_print,
+    mut_borrow::mut_borrow_print,
+    persistent_bugger::persistent_bugger_display,
+    phone_number::create_phone_number_display,
+    rev_2::rev_2_display,
+    rv_a::rev_a_print,
+    spin_word::spin_word_display,
+    square_digit::square,
+    two_sum::two_sum_diplay,
+    variable::{shadowing_variable_print, variable_operation, varialbe_print},
+    vector_variable::vector_print,
+    verify_vaccine_code::insert_vaccine_id,
+    who_like_it::who_likes_display,
 };
 
 mod borrower_ex;
 mod break_camel_case;
 mod control_flow;
+mod duplicat_encoder;
 mod enums;
 mod error_handling;
 mod ex_variable;
@@ -59,5 +83,7 @@ fn main() {
     // spin_word_display();
     // create_phone_number_display();
     // two_sum_diplay();
-    break_camel_case_fn();
+    // break_camel_case_fn();
+
+    duplicate_encoder_fn();
 }
