@@ -1,13 +1,13 @@
 use std::{
+    collections::HashMap,
     io::{self, BufRead, Result, stdin},
-    vec,
 };
 
 pub fn sum_pairs_fn() -> io::Result<()> {
     let stdin = stdin();
     let mut lines = stdin.lock().lines();
 
-    println!("enter the value seperated by space ");
+    println!("enter the value seperated by space");
 
     let ints = match lines.next() {
         Some(Ok(l)) => l
@@ -25,6 +25,16 @@ pub fn sum_pairs_fn() -> io::Result<()> {
         }
     };
 
+    let target = lines.next().unwrap().unwrap().parse::<i32>().unwrap();
+
+    let mut num_map: HashMap<i32, usize> = HashMap::new();
+
+    for (i, &num) in ints.iter().enumerate() {
+        let complement = target - num;
+        if let Some(j) = num_map.get(&complement) {
+            println!("{} {}", j, i);
+        }
+    }
     println!(" ints {:?}", ints);
     Ok(())
 }
