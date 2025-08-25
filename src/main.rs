@@ -18,6 +18,7 @@ use crate::{
     rv_a::rev_a_print,
     spin_word::spin_word_display,
     square_digit::square,
+    sum_pairs::sum_pairs_fn,
     two_sum::two_sum_diplay,
     variable::{shadowing_variable_print, variable_operation, varialbe_print},
     vector_variable::vector_print,
@@ -47,6 +48,7 @@ mod rev_2;
 mod rv_a;
 mod spin_word;
 mod square_digit;
+mod sum_pairs;
 mod two_sum;
 mod unique_in_order;
 mod variable;
@@ -69,7 +71,7 @@ fn main() {
     // enums_print();
     // borrower_ex_display();
 
-    // rev_a_print();
+// rev_a_print();
     // mut_borrow_print();
     // insert_vaccine_id();t
     // guess_number_print();
@@ -85,5 +87,6 @@ fn main() {
     // two_sum_diplay();
     // break_camel_case_fn();
 
-    duplicate_encoder_fn();
+    // duplicate_encoder_fn();
+    sum_pairs_fn();
 }
