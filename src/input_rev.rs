@@ -4,7 +4,6 @@ pub fn input_rev() -> io::Result<()> {
     let stdin = io::stdin();
     let mut lines = stdin.lock().lines();
 
-    println!("x");
 
     let x: i32 = match lines.next() {
         Some(Ok(line)) => line.trim().parse().map_err(|e| {

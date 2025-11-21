@@ -9,6 +9,7 @@ use crate::{
     factorial::factorial_display,
     find_intersection::find_intersection_display,
     guess_number::guess_number_print,
+    input_ex::get_user_input,
     is_this_triangle::is_this_triangle_display,
     looping::looping_print,
     mut_borrow::mut_borrow_print,
@@ -37,6 +38,7 @@ mod ex_variable;
 mod factorial;
 mod find_intersection;
 mod guess_number;
+mod input_ex;
 mod input_rev;
 mod is_this_triangle;
 mod looping;
@@ -91,5 +93,6 @@ fn main() {
 
     // duplicate_encoder_fn();
     // sum_pairs_fn();
-    two_square_matrix_fn();
+    // two_square_matrix_fn();
+    get_user_input();
 }
