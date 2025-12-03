@@ -39,6 +39,22 @@ pub fn input_rev() -> io::Result<()> {
         }
     };
 
+    let age: i32 = match lines.next() {
+        Some(Ok(l)) => l.trim().parse().map_err(|e| {
+            io::Error::new(
+                io::ErrorKind::InvalidInput,
+                format!("invalid input : {}", e),
+            )
+        })?,
+        Some(Err(e)) => return Err(e),
+        None => {
+            return Err(io::Error::new(
+                io::ErrorKind::InvalidInput,
+                "not input give",
+            ));
+        }
+    };
+
     println!("enter the value of y");
 
     let y: i32 = match lines.next() {
@@ -57,6 +73,21 @@ pub fn input_rev() -> io::Result<()> {
         }
     };
 
+    println!("enter password :");
+    let password: String = match lines.next() {
+        Some(Ok(l)) => l.trim().parse().map_err(|e| {
+            io::Error::new(io::ErrorKind::InvalidInput, format!("Invalid input {}", e))
+        })?,
+        Some(Err(e)) => return Err(e),
+        None => {
+            return Err(io::Error::new(
+                io::ErrorKind::InvalidInput,
+                "no input provided",
+            ));
+        }
+    };
+    
+    println!("password {}", password);
     println!("array white space");
 
     let arr: Vec<i32> = match lines.next() {
